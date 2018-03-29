@@ -1,0 +1,5 @@
+AddDefaultCharset utf-8
+AuthName "Enter name and pass"
+AuthType Basic
+AuthUserFile /home/taximurom/data/www/taximurom.ru/manager/.htpasswd
+Require valid-user

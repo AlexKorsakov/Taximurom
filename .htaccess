@@ -1,0 +1,8 @@
+AddDefaultCharset UTF-8
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^taximurom\.ru
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_URI} !^/(templates|manager)
+RewriteRule ^(.*)$ index.php?route=$1 [L,QSA]
